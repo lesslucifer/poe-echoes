@@ -1,0 +1,30 @@
+@font-face{
+  font-family:'FontinSmallCaps';
+  font-weight:normal;
+  font-style:normal;
+  src:url('./font/Fontin-SmallCaps-Hinted.ttf') format("truetype");
+}
+@font-face{
+  font-family:'FontinRegular';
+  font-weight:normal;
+  font-style:normal;
+  src:url('./font/Fontin-Regular-Hinted.ttf') format("truetype");
+}
+@font-face{
+  font-family:'FontinItalic';
+  font-weight:normal;
+  font-style:italic;
+  src:url('./font/Fontin-Italic-Hinted.ttf') format("truetype");
+}
+@font-face{
+  font-family:'FontinBold';
+  font-weight:bold;
+  font-style:normal;
+  src:url('./font/Fontin-Bold-Hinted.ttf') format("truetype");
+}
+@font-face {
+  font-family: 'FrizQuadrataC';
+  font-weight: normal;
+  font-style: normal;
+  src:url('./font/FrizQuadrataITC-Hinted.ttf') format("truetype");
+}
