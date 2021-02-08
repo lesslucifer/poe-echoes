@@ -77,7 +77,6 @@ export class LogWatcher {
     if (bytesRead) {
       const str = this.readBuff.toString('utf8', 0, bytesRead)
       const lines = str.split('\n').map(line => line.trim()).filter(line => line.length)
-      console.log('Lines', lines)
       overlayWindow!.webContents.send(ipc.CLIENT_LOG_UPDATE, { lines } as ipc.IpcClientLog)
     }
 

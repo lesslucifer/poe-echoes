@@ -39,7 +39,7 @@
       <div class="mb-4 flex">
         <ui-radio v-model="config.language" value="en" class="mr-4">English</ui-radio>
         <ui-radio v-model="config.language" value="ru" class="mr-4">Русский</ui-radio>
-      </div>
+      </div >
     </div>
     <div class="mb-2">
       <div class="flex-1 mb-1">{{ t('Auto-download updates') }}</div>

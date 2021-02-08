@@ -98,6 +98,13 @@ export function handleLine (line: string) {
         }
       }
 
+      console.log('Buy entry', entry)
+      const price = entry.trade.price.name == 'Chaos Orb' ? entry.trade.price.amount : entry.trade.price.name == 'Exalted Orb' ? 100 * entry.trade.price.amount : 0
+      console.log('Price', price)
+      if (price >= 100) {
+        sendPOEEchoesMessage(JSON.stringify(entry, null, 2))
+      }
+
       // console.log(entry)
     } else if ((match = entry.body.match(TRADE_BULK_WHISPER[Config.store.language]))) {
       const [pAmount, pName] = [
@@ -120,11 +127,12 @@ export function handleLine (line: string) {
         }
       }
 
+      // sendPOEEchoesMessage(JSON.stringify(entry, null, 2))
       // console.log(entry)
     }
 
-    console.log('Start send tele msg')
-    sendPOEEchoesMessage(JSON.stringify(entry, null, 2))
+    // console.log('Start type in chat')
+    // typeInChat('@last hello', false)
   }
 }
 

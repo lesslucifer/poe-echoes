@@ -13,6 +13,7 @@ const AUTO_CLEAR = [
 ]
 
 export function typeInChat (text: string, send: boolean) {
+  console.log('Type in chat', text, send)
   const saved = clipboard.readText()
 
   if (text.startsWith(PLACEHOLDER_LAST)) {
